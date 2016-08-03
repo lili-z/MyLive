@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="animationImages">
+        <item>@drawable/kk_launcher_loading_1</item>
+        <item>@drawable/kk_launcher_loading_2</item>
+        <item>@drawable/kk_launcher_loading_3</item>
+        <item>@drawable/kk_launcher_loading_4</item>
+        <item>@drawable/kk_launcher_loading_5</item>
+        <item>@drawable/kk_launcher_loading_6</item>
+        <item>@drawable/kk_launcher_loading_7</item>
+        <item>@drawable/kk_launcher_loading_8</item>
+        <item>@drawable/kk_launcher_loading_9</item>
+        <item>@drawable/kk_launcher_loading_10</item>
+    </string-array>
+</resources>

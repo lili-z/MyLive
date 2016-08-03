@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/rl_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <com.wyp.mylive.ui.ignore.RoundImageView
+            android:id="@+id/iv_toutiao_top_toleft"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/kk_launcher_loading_1" />
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_find_fragment_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="发现"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_viewpager_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/tv_hot_fragment"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#555555"
+                        android:gravity="center"
+                        android:text="热门"
+                        android:textColor="@color/green"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_concern_fragment"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#555555"
+                        android:gravity="center"
+                        android:text="关心"
+                        android:textColor="@color/gray_white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewpager_option_line"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/green" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:src="@drawable/selector_search_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

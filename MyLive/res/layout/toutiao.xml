@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_toutiao_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         >
+    </LinearLayout>
+
+    <com.wyp.mylive.view.PullToRefreshView
+        android:id="@+id/prv_toutiao_refresh"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.wyp.mylive.view.TouTiaoListView
+            android:id="@+id/lv_toutiao"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#000000" 
+            android:background="#eeeeee"
+            />
+    </com.wyp.mylive.view.PullToRefreshView>
+
+</LinearLayout>

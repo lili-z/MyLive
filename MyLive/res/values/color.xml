@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="green">#31C27C</color>
+    <color name="gray_white">#99ffffff</color>
+	
+    <!-- 播放界面设置的颜色 -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="game_text_black">#ff000000</color>
+    <color name="text_white">#ffffffff</color>
+    <color name="vert_full_edit_bg_color">#80ffffff</color>
+     <color name="text_black">#ff333333</color>
+     <color name="kk_game_cata_bg_stroke">#ffd4d4d4</color>
+     <color name="kk_background_ap_white">#f2ffffff</color>
+     <color name="kk_background_white">#ffffffff</color>
+</resources>

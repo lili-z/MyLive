@@ -1,0 +1,275 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context=".MyInfoActivity"
+    tools:ignore="ContentDescription,HardcodedText,DuplicateIds" >
+
+    <RelativeLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+         >
+         <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/kk_game_back_btn" />
+
+         <TextView
+             android:id="@+id/textView1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:textSize="15sp"
+             android:text="我的资料" />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llPhoto"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/llTop" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="头像" />
+
+        <com.wyp.mylive.ui.RoundImageView
+            android:id="@+id/tvPhoto"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/abc_btn_check_to_on_mtrl_015" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+		<ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_login_forget" />
+    </LinearLayout>
+	<LinearLayout
+        android:id="@+id/llNickName"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/llPhoto" >
+		
+	    <TextView
+            android:id="@+id/textView3"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="昵称" />
+
+	    <TextView
+	        android:id="@+id/tvNickName"
+	        android:layout_marginLeft="12dp"
+	        android:layout_gravity="center_vertical"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:textColor="#555555"
+	        android:text="DDDDDDDDD" />
+	    
+	    <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_login_forget" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout
+        android:id="@+id/llID"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/llNickName" >
+		
+	    <TextView
+            android:id="@+id/textView3"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="ID" />
+
+	    <TextView
+	        android:id="@+id/tvID"
+	        android:layout_marginLeft="12dp"
+	        android:layout_gravity="center_vertical"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:textColor="#555555"
+	        android:text="1955216548" />
+	    
+	    <Button
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:text="复制ID"
+                android:layout_marginRight="10dp"/>
+	    
+	</LinearLayout>
+	
+	<LinearLayout
+        android:id="@+id/llGender"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/llID" >
+		
+	    <TextView
+            android:id="@+id/textView3"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="性别" />
+
+	    <ImageView
+	        android:id="@+id/ivGender"
+	        android:layout_width="15dp"
+	        android:layout_gravity="center_vertical"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:src="@drawable/kk_sex_icon_man" />
+	    <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+	    
+	    <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_login_forget" />
+	</LinearLayout>
+	
+	<LinearLayout
+        android:id="@+id/llLocation"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/llGender" >
+		
+	    <TextView
+            android:id="@+id/textView3"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="地区" />
+
+	    <TextView
+	        android:id="@+id/tvLocation"
+	        android:layout_marginLeft="12dp"
+	        android:layout_gravity="center_vertical"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:textColor="#555555"
+	        android:text="成都" />
+	    
+	    <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_login_forget" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout
+        android:id="@+id/llSign"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/llLocation" >
+		
+	    <TextView
+            android:id="@+id/textView3"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="签名" />
+
+	    <TextView
+	        android:id="@+id/tvSign"
+	        android:layout_marginLeft="12dp"
+	        android:layout_gravity="center_vertical"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:textColor="#555555"
+	        android:text="未设置" />
+	    
+	    <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_login_forget" />
+	    
+	</LinearLayout>
+	
+</RelativeLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_live_room_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom" >
+
+    <LinearLayout
+        android:id="@+id/ll_chat_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_chat_msg_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="75.0dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_chat_content"
+                android:layout_width="fill_parent"
+                android:layout_height="142.0dip"
+                android:background="@color/transparent"
+                android:gravity="bottom"
+                android:visibility="visible" >
+
+                <ListView
+                    android:id="@+id/lv_chat_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:listSelector="@color/transparent"
+                    android:scrollbars="none"
+                    android:stackFromBottom="true"
+                    android:transcriptMode="alwaysScroll" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_user_come_in"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11.0dip"
+                android:layout_marginTop="2.0dip"
+                android:shadowColor="#ff000000"
+                android:shadowDx="2.0"
+                android:shadowDy="2.0"
+                android:shadowRadius="2.0"
+                android:textColor="#ffebd29b"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_chat_input_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="49.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" >
+
+            <ImageView
+                android:id="@+id/btn_share"
+                android:layout_width="54.0dip"
+                android:layout_height="35.0dip"
+                android:paddingRight="15.0dip"
+                android:src="@drawable/kk_bang_room_share" />
+
+            <TextView
+                android:id="@+id/tv_send_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="35.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:background="@drawable/kk_vert_full_edit"
+                android:gravity="center_vertical"
+                android:hint="来！说点啥！！"
+                android:paddingLeft="13.0dip"
+                android:textColorHint="@color/game_text_black"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@+id/btn_shot_screen"
+                android:layout_width="54.0dip"
+                android:layout_height="35.0dip"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="15.0dip"
+                android:src="@drawable/kk_bang_shot_screen_btn" />
+
+            <RelativeLayout
+                android:id="@+id/rl_im_layout"
+                android:layout_width="54.0dip"
+                android:layout_height="35.0dip"
+                android:paddingLeft="15.0dip" >
+
+                <ImageView
+                    android:id="@+id/iv_im_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/kk_bang_room_im_button" />
+
+                <TextView
+                    android:id="@+id/tv_im_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-10.0dip"
+                    android:layout_toRightOf="@+id/iv_im_btn"
+                    android:background="@drawable/kk_bang_room_im_num_bg"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/text_white"
+                    android:textSize="8.0sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/btn_redpackage"
+                android:layout_width="54.0dip"
+                android:layout_height="35.0dip"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10.0dip"
+                android:src="@drawable/kk_plugin_red_pkg_icon"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/btn_gift"
+                android:layout_width="54.0dip"
+                android:layout_height="35.0dip"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10.0dip"
+                android:src="@drawable/kk_bang_room_gift_icon" />
+        </LinearLayout>
+    </LinearLayout>
+<!-- 
+    <com.melot.game.room.HeartFlowLayout
+        android:id="@+id/heart_flow_layout"
+        android:layout_width="75.0dip"
+        android:layout_height="230.0dip"
+        android:layout_alignBottom="@+id/ll_chat_bar"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50.0dip" />
+         -->
+
+    <ImageView
+        android:id="@+id/btn_turn_hori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_chat_bar"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:src="@drawable/kk_room_turn_hori"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/ll_chat_edit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/ll_record_view"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@color/vert_full_edit_bg_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" >
+
+            <EditText
+                android:id="@+id/et_chat"
+                android:layout_width="fill_parent"
+                android:layout_height="35.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/kk_vertfull_chatedit"
+                android:gravity="center_vertical"
+                android:hint="随便说点啥"
+                android:imeOptions="flagNoExtractUi"
+                android:maxLength="20"
+                android:maxLines="4"
+                android:paddingLeft="4.0dip"
+                android:paddingRight="4.0dip"
+                android:singleLine="false"
+                android:textColor="@color/text_black"
+                android:textColorHint="#ffc5c5c5"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="27.0dip"
+                android:layout_marginLeft="9.0dip"
+                android:background="@drawable/kk_vertroom_send_btn"
+                android:clickable="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:scaleType="centerInside"
+                android:text="发送"
+                android:textColor="@color/text_black"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
